@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>lorenz package &mdash; Mini-Project for Phd-Python-1 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Mini-Project for Phd-Python-1 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="lorenz" href="../modules.html" />
+    <link rel="prev" title="lorenz" href="../modules.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../modules.html" title="lorenz"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Mini-Project for Phd-Python-1 0.0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../modules.html" accesskey="U">lorenz</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="lorenz-package">
+<h1>lorenz package<a class="headerlink" href="#lorenz-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-lorenz.filehandling">
+<span id="lorenz-filehandling-module"></span><h2>lorenz.filehandling module<a class="headerlink" href="#module-lorenz.filehandling" title="Permalink to this headline">¶</a></h2>
+<p>This file can contain functionalities for saving/loading data</p>
+<p class="rubric">Functions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#lorenz.filehandling.write_x_y_z_tofile" title="lorenz.filehandling.write_x_y_z_tofile"><code class="xref py py-obj docutils literal"><span class="pre">write_x_y_z_tofile</span></code></a>(var,&nbsp;filename)</td>
+<td>Write the arrays of x, y, z to a file</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#lorenz.filehandling.read_x_y_z_fromfile" title="lorenz.filehandling.read_x_y_z_fromfile"><code class="xref py py-obj docutils literal"><span class="pre">read_x_y_z_fromfile</span></code></a>(filename)</td>
+<td>read x y z from file: filename</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="lorenz.filehandling.write_x_y_z_tofile">
+<code class="descclassname">lorenz.filehandling.</code><code class="descname">write_x_y_z_tofile</code><span class="sig-paren">(</span><em>var</em>, <em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/filehandling.html#write_x_y_z_tofile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.filehandling.write_x_y_z_tofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the arrays of x, y, z to a file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>var</strong> &#8211; x, y, z</li>
+<li><strong>filename</strong> &#8211; the target filename</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="lorenz.filehandling.read_x_y_z_fromfile">
+<code class="descclassname">lorenz.filehandling.</code><code class="descname">read_x_y_z_fromfile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/filehandling.html#read_x_y_z_fromfile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.filehandling.read_x_y_z_fromfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>read x y z from file: filename</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> &#8211; The file which we want to read from</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">three arrays: x, y, z</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy.arrays</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-lorenz.plot">
+<span id="lorenz-plot-module"></span><h2>lorenz.plot module<a class="headerlink" href="#module-lorenz.plot" title="Permalink to this headline">¶</a></h2>
+<p>This file may contain functionalities for plotting</p>
+<p class="rubric">Functions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#lorenz.plot.plot3Dpdf" title="lorenz.plot.plot3Dpdf"><code class="xref py py-obj docutils literal"><span class="pre">plot3Dpdf</span></code></a>([x,&nbsp;y,&nbsp;z,&nbsp;sigma,&nbsp;beta,&nbsp;rho])</td>
+<td>Plot the 3D scatter of lorenz</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#lorenz.plot.plot2Dpdf" title="lorenz.plot.plot2Dpdf"><code class="xref py py-obj docutils literal"><span class="pre">plot2Dpdf</span></code></a>([x,&nbsp;y,&nbsp;z,&nbsp;sigma,&nbsp;beta,&nbsp;rho])</td>
+<td>Plot 3*1 subplots of 2D plot for lorenz</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="lorenz.plot.plot3Dpdf">
+<code class="descclassname">lorenz.plot.</code><code class="descname">plot3Dpdf</code><span class="sig-paren">(</span><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>sigma=10</em>, <em>beta=2.67</em>, <em>rho=6</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/plot.html#plot3Dpdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.plot.plot3Dpdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the 3D scatter of lorenz</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> &#8211; x-axis data</li>
+<li><strong>y</strong> &#8211; y-axis data</li>
+<li><strong>z</strong> &#8211; z-axis data</li>
+<li><strong>sigma</strong> &#8211; param sigma for lorenz</li>
+<li><strong>beta</strong> &#8211; param beta for lorenz</li>
+<li><strong>rho</strong> &#8211; param rho for lorenz</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="lorenz.plot.plot2Dpdf">
+<code class="descclassname">lorenz.plot.</code><code class="descname">plot2Dpdf</code><span class="sig-paren">(</span><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>sigma=10</em>, <em>beta=2.67</em>, <em>rho=6</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/plot.html#plot2Dpdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.plot.plot2Dpdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot 3*1 subplots of 2D plot for lorenz</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> &#8211; x-axis data</li>
+<li><strong>y</strong> &#8211; y-axis data</li>
+<li><strong>z</strong> &#8211; z-axis data</li>
+<li><strong>sigma</strong> &#8211; param sigma for lorenz</li>
+<li><strong>beta</strong> &#8211; param beta for lorenz</li>
+<li><strong>rho</strong> &#8211; param rho for lorenz</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-lorenz.run">
+<span id="lorenz-run-module"></span><h2>lorenz.run module<a class="headerlink" href="#module-lorenz.run" title="Permalink to this headline">¶</a></h2>
+<p>This file may contain a convenient interface/function for</p>
+<p>1: computing a trajectory using an ODE solver from solver.py
+2: save data to file
+3: plot data</p>
+<p>and possible another function that</p>
+<p>2: load data from file
+3: plot data</p>
+<p class="rubric">Functions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#lorenz.run.run_save_plot" title="lorenz.run.run_save_plot"><code class="xref py py-obj docutils literal"><span class="pre">run_save_plot</span></code></a>(sigma,&nbsp;beta,&nbsp;rho,&nbsp;initial_arrays)</td>
+<td>Run Euler_solve, save and plot trajectory</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#lorenz.run.run_load_plot" title="lorenz.run.run_load_plot"><code class="xref py py-obj docutils literal"><span class="pre">run_load_plot</span></code></a>(target_file,&nbsp;sigma,&nbsp;beta,&nbsp;rho)</td>
+<td>Read and plot trajectory</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="lorenz.run.run_save_plot">
+<code class="descclassname">lorenz.run.</code><code class="descname">run_save_plot</code><span class="sig-paren">(</span><em>sigma</em>, <em>beta</em>, <em>rho</em>, <em>initial_arrays</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/run.html#run_save_plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.run.run_save_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Euler_solve, save and plot trajectory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sigma</strong> &#8211; sigma</li>
+<li><strong>beta</strong> &#8211; beta</li>
+<li><strong>rho</strong> &#8211; rho</li>
+<li><strong>initial_arrays</strong> &#8211; [x[0], y[0], z[0]]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the name of saved file.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">String</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="lorenz.run.run_load_plot">
+<code class="descclassname">lorenz.run.</code><code class="descname">run_load_plot</code><span class="sig-paren">(</span><em>target_file</em>, <em>sigma</em>, <em>beta</em>, <em>rho</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/run.html#run_load_plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.run.run_load_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and plot trajectory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>target_file</strong> &#8211; The pickle file contain the traj of x, y, z</li>
+<li><strong>sigma</strong> &#8211; the sigma used for this trajectory</li>
+<li><strong>beta</strong> &#8211; the beta used for this trajectory</li>
+<li><strong>rho</strong> &#8211; the rho used for this trajectory</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-lorenz.solver">
+<span id="lorenz-solver-module"></span><h2>lorenz.solver module<a class="headerlink" href="#module-lorenz.solver" title="Permalink to this headline">¶</a></h2>
+<p>This file may contain the ODE solver</p>
+<p class="rubric">Classes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#lorenz.solver.ODE_solvers" title="lorenz.solver.ODE_solvers"><code class="xref py py-obj docutils literal"><span class="pre">ODE_solvers</span></code></a>(sigma,&nbsp;beta,&nbsp;rho)</td>
+<td>An integrated ODE solvers</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="lorenz.solver.ODE_solvers">
+<em class="property">class </em><code class="descclassname">lorenz.solver.</code><code class="descname">ODE_solvers</code><span class="sig-paren">(</span><em>sigma</em>, <em>beta</em>, <em>rho</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/solver.html#ODE_solvers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.solver.ODE_solvers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>An integrated ODE solvers
+By giving the initial parameters, we can construct the ODE solver</p>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd>solver = ODE_solver(sigma, beta, rho)</dd>
+</dl>
+<dl class="method">
+<dt id="lorenz.solver.ODE_solvers.Euler_solve">
+<code class="descname">Euler_solve</code><span class="sig-paren">(</span><em>initial_arrays</em>, <em>N=50000</em>, <em>t_sigma=0.01</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/solver.html#ODE_solvers.Euler_solve"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.solver.ODE_solvers.Euler_solve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve the equation with Euler approach</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>initial_arrays</strong> &#8211; list of initial values for x[0], y[0], z[0]</li>
+<li><strong>N</strong> &#8211; the total steps to calculate the equation</li>
+<li><strong>t_sigma</strong> &#8211; the minimal step</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">arrays of [x, y, z], size(3*n)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.arrays</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lorenz.util">
+<span id="lorenz-util-module"></span><h2>lorenz.util module<a class="headerlink" href="#module-lorenz.util" title="Permalink to this headline">¶</a></h2>
+<p>This file may contain utility functionalities to the extend you will need it</p>
+<p class="rubric">Functions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#lorenz.util.mkdir_p" title="lorenz.util.mkdir_p"><code class="xref py py-obj docutils literal"><span class="pre">mkdir_p</span></code></a>(mypath)</td>
+<td>Creates a directory.</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="lorenz.util.mkdir_p">
+<code class="descclassname">lorenz.util.</code><code class="descname">mkdir_p</code><span class="sig-paren">(</span><em>mypath</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/lorenz/util.html#mkdir_p"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lorenz.util.mkdir_p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a directory. equivalent to using mkdir -p on the command line</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-lorenz">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-lorenz" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">lorenz package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-lorenz.filehandling">lorenz.filehandling module</a></li>
+<li><a class="reference internal" href="#module-lorenz.plot">lorenz.plot module</a></li>
+<li><a class="reference internal" href="#module-lorenz.run">lorenz.run module</a></li>
+<li><a class="reference internal" href="#module-lorenz.solver">lorenz.solver module</a></li>
+<li><a class="reference internal" href="#module-lorenz.util">lorenz.util module</a></li>
+<li><a class="reference internal" href="#module-lorenz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../modules.html"
+                        title="previous chapter">lorenz</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/lorenz.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Jilin Hu.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="../_sources/_autosummary/lorenz.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>

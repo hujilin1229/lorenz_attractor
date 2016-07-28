@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Problem Statement &mdash; Mini-Project for Phd-Python-1 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Mini-Project for Phd-Python-1 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="lorenz" href="modules.html" />
+    <link rel="prev" title="Welcome to Mini-Project for Phd-Python-1’s documentation!" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="lorenz"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Mini-Project for Phd-Python-1’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Mini-Project for Phd-Python-1 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="problem-statement">
+<h1>Problem Statement<a class="headerlink" href="#problem-statement" title="Permalink to this headline">¶</a></h1>
+<p>This mini-project relates to the Lorenz attractor. In this process, we need to solve the Ordinary Differential Equations
+(ODEs), write and read the data, and plot the data. By looking this problem, we can divide this problem into following steps.</p>
+<div class="section" id="ode-solver">
+<h2>ODE Solver<a class="headerlink" href="#ode-solver" title="Permalink to this headline">¶</a></h2>
+<p>In this part, we construct a class named &#8220;ODE_solvers&#8221;. In this class, there&#8217;s a initial function which is used to
+specify sigma, beta, rho of the ODE and these three parameters are the attributes of this class. Moreover, we also
+define a function named &#8220;Euler_solve&#8221; which adopts Euler approach to solve this ODE by giving the initial conditions
+corresponding to values for (x[0], y[0], z[0]), time interval and number of steps. Of course, you can added some more
+advanced and accurate solve methods into this class, but here we just implement the Euler one to show how it works.</p>
+</div>
+<div class="section" id="filehandling">
+<h2>Filehandling<a class="headerlink" href="#filehandling" title="Permalink to this headline">¶</a></h2>
+<p>In this part, we implement a module named &#8220;filehandling&#8221; to take over the task of writing(reading)the trajectory from
+&#8220;Euler_solve&#8221; into(out) file.</p>
+</div>
+<div class="section" id="plotting">
+<h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h2>
+<p>In this part, we implement a module named &#8220;plot&#8221; which can plot a 3D and 2D of the trajectory</p>
+</div>
+<div class="section" id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<p>This is a integrated module, which integrate the solver, file writing and reading, and plotting. There are two methods
+in this module, &#8220;run_save_plot&#8221; and &#8220;run_load_plot&#8221;. When you call &#8220;run_save_plot&#8221;, it will automatically solving the
+ODE, saving the data into file and plot the trajectory. Otherwise, you can call &#8220;run_load_plot&#8221;, it will load the data
+from the file you specified and plot the trajectory.</p>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Here we conduct unit test for the functions mentioned above. All of these functions passed the unit test.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Problem Statement</a><ul>
+<li><a class="reference internal" href="#ode-solver">ODE Solver</a></li>
+<li><a class="reference internal" href="#filehandling">Filehandling</a></li>
+<li><a class="reference internal" href="#plotting">Plotting</a></li>
+<li><a class="reference internal" href="#running">Running</a></li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Mini-Project for Phd-Python-1&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="next chapter">lorenz</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ProblemStatement.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Jilin Hu.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="_sources/ProblemStatement.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>
